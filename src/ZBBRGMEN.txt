@@ -1,0 +1,37 @@
+SetUpEditor BRGMI,BRGMD,BRGML,BRGMR
+Ans->|LBRGMI
+"R,C,ELEM-LEN,WRAP
+"LIST-LEN,A
+4->dim(|LBRGMI
+2->dim(|LBRGMD
+A->|LBRGMD(2
+length(Str1)/|LBRGMI(3->|LBRGMD(1
+|LBRGMD(1->dim(|LBRGML
+|LBRGMD(1->dim(|LBRGMR
+For(A,1,|LBRGMD(1
+	|LBRGMI(1)+14A-13->|LBRGMR(A
+	(A-1)|LBRGMI(3)+1->|LBRGML(A
+End
+1->O
+0->K
+getKey
+Repeat K=105 or K=21
+	O+(K=34)-(K=25)->O
+	
+	If |LBRGMI(4:Then
+		If O<1:|LBRGMD(1->O
+		If O>|LBRGMD(1:1->O
+	Else
+		max(1,min(|LBRGMD(1),O->O
+	End
+	
+	For(A,1,|LBRGMD(1
+		TextColor(Black
+		If A=O:TextColor(White
+		Text(|LBRGMR(A),|LBRGMI(2)," "+sub(Str1,|LBRGML(A),|LBRGMI(3
+	End
+	
+Repeat Ans:getKey:End
+Ans->K:End
+|LBRGMD(2->A
+DelVar |LBRGMIDelVar |LBRGMDDelVar |LBRGMRDelVar |LBRGML
