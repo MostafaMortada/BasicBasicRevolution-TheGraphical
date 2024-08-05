@@ -1,0 +1,1115 @@
+:"BBRevolution: The Graphical
+:DCS
+"000006AA6AA0000000006666666A0000000026AAAA660000000062ADCA6A0000072626DCBB6AAA60722262A6AA66666A3266BA6A6AABAA6A726CB6A6A6ABCA6A326DC66A6A6CDA667266D666A6ADAA66332222666A26266A033372DCBB6262600000326DC6260000000072666622000000003722222700000000033337300000"
+Ans->Str1
+
+"0000076A6A6000000000767676760000000076AAAA6A0000000076ADCA760000026666DCBB6A6A60377777A6AA7676767266BA6A6AABAA6A376CB6A6A6ABBA76726DC66A6A6CCA6A3766D666A6ADAA76727272666A766667073737DCBB7677700000726DC6760000000037666676000000007272727200000000073737300000"
+Ans->Str0
+
+"BASIC BASIC REVOLUTION: THE GRAPHCAL
+
+1470391873->|C/Y
+
+If 0:Then
+	
+	
+	ClrHome
+	Output(1,1,"_________WARNING__________
+	ClrHome
+	Output(1,10,"WARNING
+	Output(3,1," Before playing, please   check that you have at le-ast have 61-64 kb of free RAM. A GarbageCollect is  also recommended.
+	Output(9,1," Press [enter] to proceed or\ any other key to quit.
+	
+Repeat Ans:getKey:End
+	ClrHome
+	If Ans!=105:Return
+	
+	
+End
+
+StoreGDB 0
+
+Lbl IN
+FnOff 
+PlotsOff 
+BackgroundOn LtBlue
+AxesOff
+GridOff
+BorderColor 3
+
+ClrDraw
+DispGraph
+
+0->Xmin
+264->Xmax
+0->Ymin
+164->Ymax
+
+SetUpEditor SX1,SY1,SX2,SY2,SX3,SY3
+
+
+"82+3|LBRYM1-3(16-|LSY1
+"132+3|LBRXM1-3(19-|LSX1
+
+
+{99,102,105,108,111,75,78,99,102,105,81,90,102,105,108,111,120,81,87,108,111,114,117,120,78,87,99,102,114,117,120,75,84,87,90,96,120,78,81,87,96,99,102,108,99,102,108,111,108,114,120,108,111,120,120,120,120,120,132,135,138,141,144,147,156,159,162,165,168,126,129,132,135,138,141,162,165,168,123,126,129,132,135,156,159,162,165,123,126,129,150,153,156,159,123,144,147,150,153,123,126,129,138,141,144,147,126,129,132,135,138,141,132,135,126,126,135,138,126,132,144,150,123,132,135,138,144,150,135,138,144,150,144,147,120,114,117,120,108,111,114,117,120,102,105,108,111,114,117,120,99,102,105,108,111,114,117,120,99,102,105,108,111,114,117,120,99,102,105,108,111,114,117,120,99,102,105,108,111,114,117,120,99,102,105,108,111,114,117,120,99,102,105,108,111,114,117,120,99,102,105,108,111,114,117,120,99,102,105,108,111,114,117,120,99,102,105,108,111,114,117,120,99,102,105,108,111,114,117,132,135,126,129,132,135,138,141,123,126,129,132,135,138,141,144,147,123,126,129,132,135,144,147,150,153,123,126,129,132,135,147,150,153,156,159,123,126,129,132,135,147,150,153,156,159,162,165,123,126,129,132,135,147,150,153,156,162,165,168,123,126,129,132,135,147,156,165,168,123,126,129,132,135,156,165,168,123,126,129,132,135,156,165,168,123,126,129,132,135,165,168,123,126,129,132,135,150,165,168,123,126,129,132,135,138,141,147,150,165,168,123,126,129,138,141,144,147,150,153,165,168,123,144,147,150,153,165,168,138,141,144,147,150,153,156,159,165,168}->|LSX1
+{82,82,82,82,82,85,85,85,85,85,88,88,88,88,88,88,88,91,91,91,91,91,91,91,94,94,94,94,94,94,94,97,97,97,97,97,97,100,100,100,100,100,100,100,103,103,103,103,106,106,106,109,109,109,112,115,118,121,82,82,82,82,82,82,82,82,82,82,82,85,85,85,85,85,85,85,85,85,88,88,88,88,88,88,88,88,88,91,91,91,91,91,91,91,94,94,94,94,94,97,97,97,97,97,97,97,100,100,100,100,100,100,103,103,106,109,109,109,112,112,112,112,115,115,115,115,115,115,118,118,118,118,121,121,40,43,43,43,46,46,46,46,46,49,49,49,49,49,49,49,52,52,52,52,52,52,52,52,55,55,55,55,55,55,55,55,58,58,58,58,58,58,58,58,61,61,61,61,61,61,61,61,64,64,64,64,64,64,64,64,67,67,67,67,67,67,67,67,70,70,70,70,70,70,70,70,73,73,73,73,73,73,73,73,76,76,76,76,76,76,76,76,79,79,79,79,79,79,79,34,34,37,37,37,37,37,37,40,40,40,40,40,40,40,40,40,43,43,43,43,43,43,43,43,43,46,46,46,46,46,46,46,46,46,46,49,49,49,49,49,49,49,49,49,49,49,49,52,52,52,52,52,52,52,52,52,52,52,52,55,55,55,55,55,55,55,55,55,58,58,58,58,58,58,58,58,61,61,61,61,61,61,61,61,64,64,64,64,64,64,64,67,67,67,67,67,67,67,67,70,70,70,70,70,70,70,70,70,70,70,73,73,73,73,73,73,73,73,73,73,73,76,76,76,76,76,76,76,79,79,79,79,79,79,79,79,79,79}->|LSY1
+
+
+"82+3|LBRYM2-3(16-|LSY2
+"132+3|LBRXM2+3(16)-3(19-|LSX2
+
+
+{138,141,138,141,144,138,141,144,138,141,144,159,138,141,144,150,153,159,162,138,141,144,147,150,153,159,162,138,141,144,147,150,153,159,162,138,141,144,147,150,153,156,159,162,138,141,144,147,153,156,159,162,144,153,156,159,162,156,159,162,156,159,162,162}->|LSX2
+{43,43,46,46,46,49,49,49,52,52,52,52,55,55,55,55,55,55,55,58,58,58,58,58,58,58,58,61,61,61,61,61,61,61,61,64,64,64,64,64,64,64,64,64,67,67,67,67,67,67,67,67,70,70,70,70,70,73,73,73,76,76,76,79}->|LSY2
+
+Plot1(Scatter,|LSX1,|LSY1,plotdot,Navy
+Plot2(Scatter,|LSX2,|LSY2,plotdot,White
+
+ClrDraw
+
+0->C
+0->O
+
+For(A,1,1000:C+1->C:End
+
+For(A,LtGray,DarkGray
+BackgroundOn A:End
+BackgroundOn Black
+PlotsOff 
+"Plot2(Scatter,|LSX1,|LSY1,plotdot,White
+
+BorderColor 4
+ClrDraw
+
+"For(B,1,500:C+1-C:End
+
+TextColor(Black
+" Loading..\.
+"Text(84,132-4length(Ans)+10,Ans
+" Loading..\.
+"Text(83,132-4length(Ans)+10,Ans
+
+
+Radian
+Float
+Normal
+Func
+a+bi
+
+" !'#$%&'()*+,-./0123456789:;<\=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}|~"->Str9
+
+SetUpEditor SX1,SY1,SX2,SY2,SX3,SY3
+{0
+Ans->|LSX1
+Ans->|LSY1
+Ans->|LSX2
+Ans->|LSY2
+Ans->|LSX3
+Ans->|LSY3
+
+
+
+SetUpEditor BRGDT,BRGHI,BRGOA,BRGAC,BBRRN
+
+"GAMEPLAY TIME,NOTES TO DISP,VERSION,RANK DISP
+If dim(|LBRGDT)=0
+{0,8,1,0->|LBRGDT
+
+
+5->dim(|LBRGAC
+
+If not(|LBRGAC(1
+Fill(0,|LBRGAC
+
+|LBRGAC->|LBRGOA
+
+0->|N
+
+PlotsOff 
+ClrDraw
+
+
+SetUpEditor BRX1I,BRY1I,BRX2I,BRY2I
+
+{14,15,16,17,11,12,13,14,15,16,17,18,19,20,9,10,11,12,13,18,19,20,21,22,7,8,9,10,21,22,23,24,5,6,7,8,23,24,25,26,4,5,6,16,25,26,27,4,5,15,16,17,26,27,3,4,15,16,17,27,28,3,4,11,12,13,14,15,16,17,27,28,2,3,8,9,10,13,14,15,16,17,28,29,2,3,7,8,14,15,16,17,18,28,29,1,2,14,15,16,17,18,29,30,1,2,14,15,16,18,29,30,1,2,13,14,15,18,29,30,0,1,13,14,15,16,17,30,31,0,1,13,14,15,16,30,31,0,1,13,14,15,16,17,30,31,0,1,13,14,16,17,30,31,1,2,13,14,16,29,30,1,2,13,16,17,29,30,1,2,13,17,29,30,2,3,13,17,18,28,29,2,3,13,18,28,29,3,4,13,14,18,19,27,28,3,4,13,14,19,27,28,4,5,13,14,19,20,26,27,4,5,6,13,14,15,18,19,20,25,26,27,5,6,7,8,13,14,15,18,19,23,24,25,26,7,8,9,10,21,22,23,24,9,10,11,12,13,18,19,20,21,22,11,12,13,14,15,16,17,18,19,20,14,15,16,17}->|LBRX1I
+{0,0,0,0,1,1,1,1,1,1,1,1,1,1,2,2,2,2,2,2,2,2,2,2,3,3,3,3,3,3,3,3,4,4,4,4,4,4,4,4,5,5,5,5,5,5,5,6,6,6,6,6,6,6,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,8,8,8,9,9,9,9,9,9,9,9,9,9,9,9,10,10,10,10,10,10,10,10,10,10,10,11,11,11,11,11,11,11,11,11,12,12,12,12,12,12,12,12,13,13,13,13,13,13,13,13,14,14,14,14,14,14,14,14,14,15,15,15,15,15,15,15,15,16,16,16,16,16,16,16,16,16,17,17,17,17,17,17,17,17,18,18,18,18,18,18,18,19,19,19,19,19,19,19,20,20,20,20,20,20,21,21,21,21,21,21,21,22,22,22,22,22,22,23,23,23,23,23,23,23,23,24,24,24,24,24,24,24,25,25,25,25,25,25,25,25,26,26,26,26,26,26,26,26,26,26,26,26,27,27,27,27,27,27,27,27,27,27,27,27,27,28,28,28,28,28,28,28,28,29,29,29,29,29,29,29,29,29,29,30,30,30,30,30,30,30,30,30,30,31,31,31,31}->|LBRY1I
+{12,13,18,19,10,21,8,14,15,16,17,23,6,11,12,19,20,25,9,22,7,15,17,24,3,14,18,28,5,14,18,26,2,10,29,4,7,11,12,18,27,1,6,30,3,13,19,28,0,3,13,17,19,28,31,0,17,31,2,12,29,2,12,17,29,2,12,29,2,29,0,17,31,0,3,14,28,31,3,14,16,18,28,1,14,30,4,14,17,19,27,2,29,5,18,20,26,3,12,15,28,7,12,24,9,20,22,6,11,12,19,20,25,8,14,15,16,17,23,10,21,12,13,18,19}->|LBRX2I
+{0,0,0,0,1,1,2,2,2,2,2,2,3,3,3,3,3,3,4,4,5,5,5,5,6,6,6,6,7,7,7,7,8,8,8,9,9,9,9,9,9,10,10,10,11,11,11,11,12,12,12,12,12,12,12,13,13,13,14,14,14,15,15,15,15,16,16,16,17,17,18,18,18,19,19,19,19,19,20,20,20,20,20,21,21,21,22,22,22,22,22,23,23,24,24,24,24,25,25,25,25,26,26,26,27,27,27,28,28,28,28,28,28,29,29,29,29,29,29,30,30,31,31,31,31}->|LBRY2I
+
+|LBRX1I->|LSX1
+|LBRY1I->|LSY1
+|LBRX2I->|LSX2
+|LBRY2I->|LSY2
+
+31-|LSY1+119-16->SY1
+|LSX1+160-16->|LSX1
+
+31-|LSY2+119-16->SY2
+|LSX2+160-16->|LSX2
+
+"BorderColor 1
+ZStandard
+0->Xmin
+264->Xmax
+0->Ymin
+164->Ymax
+
+
+Plot1(Scatter,|LSX1,|LSY1,plotpixel,White
+Plot2(Scatter,|LSX2,|LSY2,plotpixel,Blue
+
+ClrDraw
+
+0->theta
+For(A,1,500:theta+1->theta:End
+
+"PlotsOff 
+
+"WELCOME TO->Str1
+TextColor(Blue
+
+If 0:Then
+	For(A,~200,200,3
+		Line(132,164+30,132+A,0,1,White,1
+	End
+End
+
+For(A,1,length(Str1
+	For(B,0,27,3
+		Line(132,200,132+1.5(29.33*(A-5.5)+B-27/2),0,1,White,1
+	End
+	
+	Text(82-6,132-10length(Str1)+20A-20," "+sub(Str1,A,1
+End
+
+For(A,1,length(Str1
+	Text(82-6,132-10length(Str1)+20A-20," "+sub(Str1,A,1
+End
+
+
+BackgroundOn Black:For(A,DarkGray,White,~1:BackgroundOn A:End
+
+For(A,0,31,2
+	Line(144,134-A,176,134-A,0
+End
+
+0->B:For(A,1,250:B+1->B:End
+
+52.369->theta
+
+Lbl TS
+
+BorderColor 1
+ZStandard
+0->Xmin
+264->Xmax
+0->Ymin
+164->Ymax
+
+BackgroundOff
+
+Plot1(Scatter,|LSX1,|LSY1,plotpixel,Black
+Plot2(Scatter,|LSX2,|LSY2,plotpixel,LtBlue
+
+ClrDraw
+
+5->C
+
+TextColor(Black
+"Basic"
+Text(~1,16+10,132-6(length(Ans)+5),Ans
+Text(~1,36+10,132-6(length(Ans)+5),Ans
+"Revolution"
+Text(~1,56+10,132-6length(Ans),Ans
+
+TextColor(Black
+Text(0,2,"v1.0
+
+TextColor(Green
+"THE GRAPHICAL
+Text(85,132-4length(Ans),Ans
+
+TextColor(DarkGray
+"Press any
+Text(110,132-4length(Ans),Ans
+"Text(117,132-4length(Ans),Ans
+"key to start!
+Text(124,132-4length(Ans)+5,Ans
+"Text(129,132-4length(Ans)+5,Ans
+
+
+
+"--------------------------plotsquareSame as the last, but with color!plotsquareTI-Basic is way too slowplotsquarePlot point terminationplotsquareOMg u sTolE mINecrAFt spLaSH tExT!1!!1plotsquareA proud Lebaneseplotsquaretbh idk why these are hereplotsquareSahtain habibi!plotsquareDid you do your homework?plotsquarem e m o r y   e a t e rplotsquare''Leading the way to the future''plotsquare''Make cool things, teach cool stuff''plotsquarePlSim? Wot dat?plotsquareMade by a Cemetech userplotsquarehttps://www.cemetech.net/plotsquareSelf-ad: StephenMortada.github.ioplotsquareWhy?plotsquareSplash text!plotsquare-->Str9
+
+tan(sum(getTime->rand
+startTmr->rand
+
+
+
+0->A:Repeat inString(Str9,"plotsquare",A
+	randInt(1,length(Str9->A
+	inString(Str9,"plotsquare",A
+	If Ans:Ans+1->A
+End
+sub(Str9,A,inString(Str9,"plotsquare",A)-A->Str8
+
+
+If 0:Then
+	TextColor(Orange
+	For(R,1,length(Str8
+		Text(99-R+int(.5length(Str8)),min(max(132-4length(Str8)+8R-8+30,0),256),sub(Str8,R,1
+	End
+End
+
+TextColor(Black
+
+"                                                                                                                       Welcome to the new Basic Basic Revolution: The Graphical! Much improved over BBR Classic, this new part has quite a few new things! Insp\ired by Dance Dance Revolution, but this may morph into its own m\usicless rhythm game.                                                    "->Str1
+
+Line(264,0,264,13,1,MedGray,1
+Line(263,0,263,13,1,MedGray,1
+
+
+
+getKey
+0->D:0->K:1->A:0->T:Repeat D
+	
+	TextColor(White
+	Text(150,0,sub(Str1,A,length(Str1)-A
+	
+	
+	A+1->A:If A>length(Str1)-20:1->A
+	If sub(Str1,A,1)=" 
+	A+3->A
+	
+	For(W,1,5
+	getKey->C:If C!=0:C->D:End
+	T+1->T
+End
+If D=45:Goto Q
+If D=15:Goto IN
+If D=44:Goto TS
+
+Lbl M:getKey
+BorderColor 3
+BackgroundOff
+0->Xmin:264->Xmax:0->Ymin:164->Ymax
+PlotsOff 
+ClrDraw
+
+If theta=52.369:Then
+	
+	FnOff 
+	Func
+	Simul
+	8->Xres
+	DetectAsymOff
+	
+	GraphStyle(1,4
+	GraphColor(1,Blue
+	GraphStyle(2,1
+	GraphColor(2,White
+	"(X/22)^^2+14->{Y1}
+	"(X/22)^^2+14->{Y2}
+	
+	TextColor(Navy
+	Text(0,2,"Basic Basic Revolution: The Graphical
+	
+	Horizontal 149,Black,1
+	
+	
+	TextColor(Red
+	Text(150,0," https://ceme.tech/t19568
+	
+	StorePic 4
+	FnOff 
+	0->theta
+End
+
+RecallPic 4
+
+"Play         High scores  Ach\ievements Settings     About        Back to titleQuit         ->Str1
+
+{14,0,13,1
+prgmZBBRGMEN
+
+If O=1:Goto P
+If O=2:Goto HI
+If O=3:Goto AC
+If O=4:Goto CF
+If O=5:Goto AB
+If O=6:Goto TS
+If O=7:Goto Q
+
+Lbl AB
+BorderColor 2
+BackgroundOff
+ClrDraw
+TextColor(Black
+Text(0,2,"Basic Basic Revolution:
+Text(14,2,"   The Graphical (v1.0)
+
+Text(28,2,"By StephenM, Started on
+Text(42,2,"Mar. 17th, 2024
+
+Text(56,2,"For the TI-84 Plus CE
+
+Text(94,2,"INSPIRE\D BY DANCE DANCE REVOLUTION
+Text(108,2,"(KONAMI GROUP CORPORATION). I AM NOT
+Text(122,2,"IN ANY WAY ASSOCIATED WITH THE
+Text(136,2,"DEVELOPERS OF THE DDR SERIES.
+
+Text(150,2,"[enter]"
+
+Pause :Goto M
+
+0->T:Repeat Ans=105
+	T+1->T
+	If remainder(T,2:BackgroundOn LtGray
+	If remainder(T,2:BackgroundOn MedGray
+	getKey
+End
+
+Goto M
+
+Lbl AC
+BorderColor 2
+ClrDraw
+
+TextColor(Black
+Text(0,2,"Sorry, I think ach\ievements are to
+Text(14,2,"be delayed until next update. Please
+Text(28,2,"refer to the link in the main menu
+Text(42,2,"for more updates.
+Text(70,2,"Press [enter] to go back.
+Pause 
+Goto M
+
+"Welcome!                  First steps               Ya sure like some variety Certified player          Please get a break.       Patience is key           Perfection.               "->Str6
+
+"Open BBRG.                Complete a chart.         Complete 40 unique charts.Have 20 h of gameplay.    Have 150 h of gameplay.   Complete a ran\dom chart.  Get a perfect score (ran\d)->Str7
+
+
+Goto M
+
+Lbl HI
+
+BorderColor 2
+BackgroundOff
+ClrDraw
+
+Horizontal 149,Black,1
+
+TextColor(DarkGray
+Text(0,2,"High scores
+
+" !'#$%&'()*+,-./0123456789:;<\=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}|~"->Str9
+
+"[<|][|>]...uparrowdownarrowsmall0small1small2small3small4small5small6small7small8small9small10smallTsquarerootxmark[|F]^^'^^`^^^:^^-1^^2^^3^^o^^r^^T^^x_`|!|?|<|N[phat]sharpsalphabetachiDeltadeltaepsilongammagreek_pilambdamuOmegaphatPhirhoSigmasigmatau;@bolddownarrowbolduparrowintegralinvertedequalmathprintboxn/dpiUn/d"
+
+0->P
+
+Gray
+Horizontal 14,Ans,1
+If 0
+Horizontal 0,Black,1
+For(A,1,4
+	Line(264A/5,0,264A/5,14,1,Black,1
+End
+
+"Vertical 48,Black,1
+"Vertical 162,Black,1
+
+Line(49,148,49,15,1,Green,1
+Line(161,148,161,15,1,Green,1
+
+For(A,134,15,~15
+	Horizontal A,Green,1
+End
+
+TextColor(Black
+Text(150,2,"Prev
+Text(150,3+53,"Next
+"Text(150,3+2(53),3
+"Text(150,2+3(53),4
+Text(150,2+4(53),"Back
+
+0->K:Repeat K=45 or K=15
+	
+	P+9((K=26)-(K=24))+9((K=12)-(K=11))->P
+	
+	max(0,P->P
+	
+	TextColor(DarkGray
+	Text(0,132,P/9+1,"/",int(dim(|LBRGHI)/18+1
+	
+	TextColor(Navy
+	Text(0,252,"mathprintbox
+	
+	If dim(|LBRGHI:Then
+		For(A,1,9
+			2(A+P)-1->C
+			If C<dim(|LBRGHI:Then
+				If real(|LBRGHI(C))=.1:Then
+					TextColor(Black
+					Text(15A,2,A+P
+					TextColor(Orange
+					Text(15A,50," Random"
+					TextColor(Black
+					Text(15A,164,real(|LBRGHI(C+1
+				Else
+					" ->Str2
+					For(B,0,1
+						|LBRGHI(C
+						If B=0:real(Ans
+						If B=1:imag(Ans
+						toString(Ans
+						If fPart(.5length(Ans
+						"0"+Ans
+						Ans->Str1
+						If B=1 and Ans="00
+						"0000000000->Str1
+						For(E,1,10,2
+							sub(Str1,E,2
+							If Ans!="00
+							Str2+sub(Str9,expr(Ans),1->Str2
+						End
+					End
+					
+					TextColor(Black
+					If 0
+					Text(15A,2,A+P,".    ",Str2,"    :    ",real(|LBRGHI(C+1
+					
+					Text(15A,2,A+P
+					Text(15A,50,Str2
+					Text(15A,164,real(|LBRGHI(C+1
+					
+				End
+				
+			Else
+				Text(15A,2,"        
+				Text(15A,50,"                                            
+				Text(15A,164,"                                            
+				
+			End
+		End
+	Else
+		Horizontal 134,White,1
+		TextColor(Red
+		Text(15,2,"Whoops, it seems you have no scores!
+		TextColor(Black
+		Text(29,2,"You can start by pressing ''Play''.
+	End
+	getKey
+	TextColor(Black
+	Text(0,252,"       
+	
+0:Repeat Ans:getKey:End
+Ans->K:End
+
+Goto M
+
+
+
+
+
+Lbl P:0->|N
+
+"[<|][|>]...uparrowdownarrowsmall0small1small2small3small4small5small6small7small8small9small10smallTsquarerootxmark[|F]^^'^^`^^^:^^-1^^2^^3^^o^^r^^T^^x_`|!|?|<|N[phat]sharpsalphabetachiDeltadeltaepsilongammagreek_pilambdamuOmegaphatPhirhoSigmasigmatau;@bolddownarrowbolduparrowintegralinvertedequalmathprintboxn/dpiUn/d"
+
+"Randomized chart   Open external levelClose              ->Str1
+
+For(A,59-6,59+14(3)+4,2
+	Line(132-4(19),A,132-4(19)+8(19)+4,A,1,Black,1
+End
+
+{18,112,19,1
+{62,132-4(19)+4,19,1
+prgmZBBRGMEN
+
+If O=1:Goto PR
+If O=2:Goto PE
+Goto M
+
+Lbl PR:1->|N
+
+ClrHome
+Disp "Use custom speed and 
+Disp "options? (Y/N)
+Disp "Default: 1+1003510000[i]
+Input ">",Str1
+0->V
+If Str1="Y":Then
+	Input "('*':Cancel) >",Str1
+	If Str1!="*":Then
+		1->V
+		expr(Str1->U
+	End
+End
+
+PlotsOff 
+BackgroundOff
+BorderColor 4
+ClrDraw
+
+TextColor(Black
+"Generating chart
+Text(0,132-4length(Ans),Ans
+"Please wait a few moments
+Text(14,132-4length(Ans),Ans
+
+randInt(0,4,998->L2
+L2->L3
+Fill(10,L3
+
+L2+L3[i]->L1
+
+|C/Y+2[i]->L1(1
+.1->L1(2
+1+1003510000[i]->L1(3
+If V:U->L1(3
+Black+White[i]->L1(4
+
+[i]->L1(5
+[i]->L1(6
+
+[i]->L1(998
+[i]->L1(997
+[i]->L1(996
+
+sum(L1->L1(999
+
+"Random n/d->Str3
+" "->Str2
+
+
+real(L1->L2
+imag(L1->L3
+
+ClrDraw
+
+
+Lbl PE
+If not(|N:Then
+	ClrHome
+	Disp "Open file ('*' to go back)
+	Input ":",Str2
+	If Str2="*"
+	Goto P
+	
+	BorderColor 4
+	BackgroundOff
+	ClrDraw
+	
+	TextColor(Black
+	"Loading file "+Str2+"..\.
+	Text(78,132-4length(Ans),Ans
+	
+	
+	expr(Str2->L1
+	
+	real(L1->L2
+	imag(L1->L3
+	
+	If L2(1)!=|C/Y:Then
+		Pause "ERROR:INVALID HEADER
+	Goto P:End
+	
+	If L3(1)!=1:Then
+		Pause "ERROR:VERSION
+	Goto P:End
+	
+	expr(toString(L2(dim(L2))!=sum(L2,1,dim(L2)-1))+toString(L3(dim(L3))!=sum(L3,1,dim(L3)-1)))->PMT
+	
+	If PMT:Then
+		Disp "WARNING: INVALID CHECKSUM
+		Disp "Code "+toString(PMT
+		Disp "Proceed anyway? (Y/N)
+		Input ":",Str9
+		If Str9!="Y":Then
+			Goto P
+		End
+	End
+	
+	
+	If L2(2)=.1:Then
+		Pause "ERROR:RESERVED NAME
+	Goto P:End
+	
+	" !'#$%&'()*+,-./0123456789:;<\=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}|~"->Str9
+	
+	
+	
+	" ->Str3
+	For(A,0,1
+		L2->L4:If A:L3->L4
+		toString(L4(2
+		If remainder(length(Ans),2:"0"+Ans
+		Ans->Str0
+		If L4(2)=0
+		"0000000000->Str0
+		For(B,1,10,2
+			expr(sub(Str0,B,2
+			If Ans!=0
+			Str3+sub(Str9,Ans,1->Str3
+		End
+	End
+	sub(Str3,2,length(Str3)-1->Str3
+	
+	
+	If L3(1)<1000000000:Then
+		Pause "ERROR:INVALID OPTION LIST
+		Goto P
+	End
+	
+End
+
+"1ABBCD0000
+"A:MISS INTRP MODE
+"  0  CULMINATIVE
+"  1  MERCIFUL
+"B:N^^o ACCEPTABLE MISSES
+"C:STEPS TO GO BACK (AT MISS OR RESUME)
+"D:COMBO COUNTER MODE (0 HARD, 1 FORGIVING)
+
+4->dim(L5
+Fill(0,L5
+
+toString(L3(3->Str9
+expr(sub(Str9,2,1->L5(1
+expr(sub(Str9,3,2->L5(2
+expr(sub(Str9,5,1->L5(3
+expr(sub(Str9,6,1->L5(4
+
+{L5(2)<1,L5(3)<0
+If sum(Ans:Then
+	Disp "ERROR:INVALID OPTION
+	Pause Ans
+Goto P:End
+
+
+Lbl GI
+
+PlotsOff 
+BackgroundOn MedGray
+BorderColor 1
+ClrDraw
+
+TextColor(Black
+Str3
+Text(9,132-4length(Ans)," ",Ans
+
+TextColor(Yellow
+"LENGTH
+Text(30,131-8length(Ans),Ans
+"SPEED
+Text(44,132-8length(Ans),Ans
+"OPTION PACKET
+Text(58,137-8length(Ans),Ans
+"M. INTRP MODE
+"Text(72,143-8length(Ans),Ans
+"DIFFICULTY
+Text(72,129-8length(Ans),Ans
+"BACKTRACK
+Text(86,132-8length(Ans),Ans
+"COMBO COUNTER
+Text(100,134-8length(Ans),Ans
+
+
+TextColor(White
+Text(30,140,dim(L1)-5
+Text(44,140,100L2(3),"%
+toString(L3(3
+For(A,1,10
+	Text(58,140+8A-8,sub(Ans,A,1
+End
+"Hard
+If L5(1
+"Easy
+Text(72,140,Ans,"    (Rank ",L5(2),")
+Text(86,140,L5(3
+Text(100,140,"Mode ",L5(4
+
+
+TextColor(LtGray
+Text(136,2,"Press ENTER to start
+Text(150,2,"or CLEAR to quit
+
+getKey
+Repeat sum(Ans={105,21,45
+	getKey
+End
+
+If Ans=45
+Goto P
+
+"Z: MISTAKES
+"S: SCORE
+"B: CURRENT BEAT
+"R: COMBO
+
+0->Z
+0->S
+~10->B
+0->R
+
+0->M
+
+0->T
+
+not(not(L2->L4
+
+Lbl GL
+BorderColor 1
+"BackgroundOn L3(4
+BackgroundOff
+ClrDraw
+
+For(A,~2,2
+	Vertical 132+16A,Blue,1
+End
+
+
+Line(100,125,164,125,Blue,1
+
+Horizontal 149,Black,1
+
+For(A,150,164
+	Horizontal A,White,1
+End
+
+"Line(177,149,264,149,0,Black,1
+
+TextColor(Black
+Text(0,180,"Score: "
+If 0
+Text(14,180,"Miss: "
+
+
+"Line(177,164,177,135,1,Black,1
+"Line(177,135,264,135,1,Black,1
+
+TextColor(Navy
+Text(0,132-4length(Str3),Str3
+
+
+For(A,3,1,~1
+	{Orange,Red,Brown
+	TextColor(Ans(A
+	Text(~1,82-8,132-6,A
+	B->PMT
+	For(B,1,170
+		FV+1->FV
+	End
+	PMT->B
+End
+TextColor(Green
+"BEGIN!
+Text(~1,82-8,132-6length(Ans),Ans
+For(A,1,200
+	FV+1->FV
+End
+"      
+Text(~1,82-8,132-6length(Ans),Ans
+
+For(A,~2,2
+	Line(132+16A,148,132+16A,0,1,Blue,1
+End
+
+"[<|][|>]...uparrowdownarrowsmall0small1small2small3small4small5small6small7small8small9small10smallTsquarerootxmark[|F]^^'^^`^^^:^^-1^^2^^3^^o^^r^^T^^x_`|!|?|<|N[phat]sharpsalphabetachiDeltadeltaepsilongammagreek_pilambdamuOmegaphatPhirhoSigmasigmatau;@bolddownarrowbolduparrowintegralinvertedequalmathprintboxn/dpiUn/d"
+
+getKey
+Repeat K=22 or K=45 or B>dim(L1)-5 or Z>L5(2
+	
+	round(B+5,0->V
+	
+	TextColor(Navy
+	Text(164-125-8,105,"[<|]   bolduparrow   bolddownarrow    [|>]
+	Line(100,125,164,125,Blue,1
+	
+	For(A,0,8
+		If B+A-2>0 and V+A-2<dim(L2:Then
+			If L2(V+A-2
+			Pt-Off(92+16L2(V+A-2),141-16A,2
+			If L4(V+A-1
+			Pt-On(92+16L2(V+A-1),141-16A,2,Black
+		End
+	End
+	
+	
+	"                     "
+	If M=1:"Late          "
+	If M=2:"Perfect
+	If M=3:"Early         "
+	If M=4:"Miss          "
+	
+	TextColor(Black
+	If M=4:TextColor(Red
+	
+	Text(50,167,Ans
+	
+	0->M
+	
+	getKey->K
+	
+	If B>1:Then
+		{0,24,25,34,26
+		If K!=0:Then
+			If L4(V) and K=Ans(L2(V)+1:Then
+			S+5->S:2->M:0->L4(V:R+1->R:End
+			If L4(V-1) and K=Ans(L2(V-1)+1:Then
+			S+1->S:1->M:0->L4(V-1:If L5(4:R+1->R:End
+			If L4(V+1) and K=Ans(L2(V+1)+1:Then
+			S+1->S:3->M:0->L4(V+1:If L5(4:R+1->R:End
+		End
+	End
+	
+	If B>2:Then
+		If 1=L4(V-2:Then
+			B-L5(3->B
+			Z+1->Z
+			0->R
+			4->M
+			
+			For(A,0,8
+				For(N,1,4
+					Pt-Off(92+16N,141-16A,2
+				End
+			End
+			
+		Else
+			If L5(1
+			0->Z
+		End
+	End
+	
+	TextColor(Black
+	Text(0,230,S
+	Text(15,240,Z
+	
+	TextColor(Green
+	Text(36,167,R,"xmark
+	
+	B+L2(3->B
+End
+
+If K!=22 and K!=45:Goto EN
+
+StorePic 1
+
+Lbl PS
+
+ClrDraw
+RecallPic 1
+
+For(A,0,13
+	Horizontal 95+A,MedGray,1
+End
+TextColor(White
+"PAUSED
+Text(55,132-4length(Ans),Ans
+
+For(A,~28-14,~1,2
+	Horizontal 164/2+A-1+14,Black,1
+End
+
+"ContinueRestart Quit    ->Str1
+
+{164/2-14,100,8,1
+prgmZBBRGMEN
+
+If O=1:Then
+	B-L5(3->B
+	Goto GL
+End
+0->A
+If O=2:Goto EP
+1->A
+If O=3:Goto EP
+
+Lbl EP
+"Horizontal 165,Black,4
+{21->|LBRGCR
+
+BackgroundOn Black
+ClrDraw
+
+TextColor(Red
+"RESTART
+If A
+"QUIT
+Text(164/2-13-14,132-4length(Ans),Ans
+"ARE YOU SURE?
+Text(164/2-13,132-4length(Ans),Ans
+
+"No Yes->Str1
+
+{164/2,132-24,3,1
+prgmZBBRGMEN
+
+BackgroundOff
+ClrDraw
+
+If O=1:Goto PS
+If O=2 and A:Goto M
+Goto GI
+
+
+Lbl EN
+
+BackgroundOn MedGray
+Horizontal 165,Black,4
+
+If 2>dim(|LBRGHI
+{0[i],0->|LBRGHI
+
+1+sum(not(cumSum(L1(2)=|LBRGHI->theta
+
+If theta>dim(|LBRGHI
+augment(|LBRGHI,{0[i],0->|LBRGHI
+
+not(not(L2->L4
+
+If Z<=L5(2:Then
+	TextColor(Green
+	"TRACK COMPLETE!
+Else
+	TextColor(Red
+	"HOW DISAPPOINTING.
+End
+
+Text(~1,0,132-6length(Ans),Ans
+
+TextColor(Black
+Text(30,0," Name: ",Str3
+If not(|N
+Text(40,120,Str2,".8xl
+Text(50,0," Completed: ",B,"/",dim(L1)-5," (",round(100B/(dim(L1)-5),0),"%)
+
+Text(64,0," Score: ",S," (",round(100S/(5(sum(L4,5,dim(L4)-1))),0),"%)
+
+
+Text(78,0," Previous: ",real(|LBRGHI(theta+1))
+
+L1(2->|LBRGHI(theta
+
+If S>real(|LBRGHI(theta+1:Then
+	TextColor(Green
+	Text(~1,92,2,"New high score!
+	S->|LBRGHI(theta+1
+End
+
+If |LBRGHI(1)=0[i]
+DeltaList(cumSum(DeltaList(cumSum(|LBRGHI->|LBRGHI
+
+TextColor(Black
+" REPLAY CHART?
+Text(108,132-4length(Ans)+4,Ans
+"No Yes"->Str1
+
+{121,120,3,1
+prgmZBBRGMEN
+
+If O=2:Goto GI
+
+BorderColor 3
+BackgroundOff
+ClrDraw
+RecallPic 4
+Goto P
+
+
+Lbl CF
+BorderColor 2
+BackgroundOff
+ClrDraw
+
+Horizontal 149,Black,1
+TextColor(DarkGray
+Text(0,2,"Settings
+
+"Clear all data            Go back                   ->Str1
+
+{14,0,26,1
+prgmZBBRGMEN
+
+If O=1:Then
+	ClrDraw
+	Horizontal 164-29-14,Black,1
+	TextColor(Red
+	Text(0,2,"Are you sure you want to erase all
+	Text(14,2,"data? Once you select ''Yes'', there
+	Text(28,2,"is no turning back.
+	
+	"No Yes->Str1
+	
+	{28+14,0,3,1
+	prgmZBBRGMEN
+	
+	If O=1:Goto CF
+	If O=2:Then
+		BorderColor 4
+		ClrDraw
+		TextColor(Black
+		"Program will exit after reset.
+		Text(82-14,147-4length(Ans),Ans
+		"Press ENTER to proceed.
+		Text(82,142-4length(Ans),Ans
+		Pause 
+		ClrList |LBRGDT,|LBRGHI,|LBRGAC
+		1264978543->A
+		Goto Q
+	End
+End
+
+If O=2:Goto M
+
+Goto CF
+
+
+Lbl Q
+PlotsOff 
+FnOff 
+BorderColor 4
+ClrDraw
+
+If A!=1264978543:Then
+	
+	TextColor(Black
+	"Bye-bye!
+	Text(82-7,132-4length(Ans)," ",Ans
+	
+	For(A,1,5
+		BackgroundOn Navy
+		BackgroundOn Black
+	End
+	
+	ClrDraw
+	For(A,1,200
+	theta+1->theta:End
+	
+	For(A,DarkGray,White,~1
+		BackgroundOn A
+	End
+	
+End
+
+BackgroundOff
+ClrDraw
+
+Archive |LBRGDT
+Archive |LBRGHI
+Archive |LBRGAC
+DelVar |LBRGOA
+DelVar |LBBRRN
+DelVar L1DelVar L2
+DelVar L3DelVar L4
+DelVar L5DelVar L6
+DelVar |LSX1DelVar |LSY1
+DelVar |LSX2DelVar |LSY2
+DelVar |LSX3DelVar |LSY3
+DelVar |LBRX1IDelVar |LBRY1IDelVar |LBRX2IDelVar |LBRY2IDelVar |LBRXM1DelVar |LBRYM1DelVar |LBRXM2DelVar |LBRYM2SetUpEditor 
+RecallGDB 0
+PlotsOff 
+ClrHome
+"      BBRG v1.0 - StephenM
